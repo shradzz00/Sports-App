@@ -22,7 +22,7 @@ class _FeedsState extends State<Feeds> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Theme.of(context).primaryColor,
       body: ListView(
         children: <Widget>[
             Padding(
@@ -43,10 +43,6 @@ class _FeedsState extends State<Feeds> {
                   child: IconButton(
                     icon: Icon(Icons.search),
                     onPressed: () {
-                        Navigator.push(
-    context,
-    MaterialPageRoute(builder: (context) => Homes()),
-  );
                     },
                   ),
                 ),
@@ -119,6 +115,7 @@ class CustomContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+        color: Theme.of(context).primaryColor,
         child: Column(
           children: <Widget>[
 
@@ -161,7 +158,7 @@ Padding(
                                   ),
                                   ),
                                           Padding(
-                                              padding: EdgeInsets.only(left: 80),
+                                              padding: EdgeInsets.only(left: 60),
                                           child:Text("12 min ago"),
                                           ),
                                       ],
@@ -194,9 +191,9 @@ Padding(
                                                           onPressed: () {},
                                                       ),
                                                       Padding(
-                                                          padding: EdgeInsets.only(left: 100 ),
+                                                          padding: EdgeInsets.only(left: 150 ),
                                                       child: IconButton(
-                                                          icon: Icon(Icons.menu),
+                                                          icon: Icon(Icons.more_vert),
                                                           onPressed: () {},
                                                       ),
                                                       ),
@@ -218,6 +215,7 @@ class CustomContainers extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+        color: Theme.of(context).primaryColor,
         child: Column(
           children: <Widget>[
 
@@ -295,7 +293,7 @@ Padding(
                                                       Padding(
                                                           padding: EdgeInsets.only(left: 100 ),
                                                       child: IconButton(
-                                                          icon: Icon(Icons.menu),
+                                                          icon: Icon(Icons.more_vert),
                                                           onPressed: () {},
                                                       ),
                                                       ),

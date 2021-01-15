@@ -10,7 +10,7 @@ class _TurfState extends State<Turf> {
     @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor:Colors.white,
+        backgroundColor: Theme.of(context).primaryColor,
         body:ListView(
             children: <Widget>[
                 Container(
@@ -164,7 +164,7 @@ class _TurfState extends State<Turf> {
                    children: <Widget>[
                Container(
                    width: 150,
-                   color:Colors.grey[200],
+                   color:Colors.grey[600],
                    child:Row(
                        children: <Widget>[
                            ClipOval(
@@ -180,7 +180,10 @@ class _TurfState extends State<Turf> {
           ),
         ),
       ),
-      Text("Drinking Water"),
+      Padding(
+          padding: EdgeInsets.only(left: 7),
+      child:Text("Drinking Water"),
+      ),
                            
                        ],
                    ),
@@ -189,7 +192,7 @@ class _TurfState extends State<Turf> {
                    padding: EdgeInsets.only(left: 20),
                child:Container(
                    width: 150,
-                   color: Colors.grey[200],
+                   color: Colors.grey[600],
                    child:Row(
                        children: <Widget>[
                            ClipOval(
@@ -205,7 +208,10 @@ class _TurfState extends State<Turf> {
           ),
         ),
       ),
-      Text("Dressing Room"),
+      Padding(
+          padding: EdgeInsets.only(left: 5),
+      child:Text("Dressing Room"),
+      ),
                            
                        ],
                    ),
@@ -220,7 +226,7 @@ class _TurfState extends State<Turf> {
                    children: <Widget>[
                Container(
                    width: 150,
-                   color: Colors.grey[200],
+                   color: Colors.grey[600],
                    child:Row(
                        children: <Widget>[
                            ClipOval(
@@ -236,7 +242,10 @@ class _TurfState extends State<Turf> {
           ),
         ),
       ),
-      Text("Parking"),
+      Padding(
+          padding: EdgeInsets.only(left: 10),
+      child:Text("Parking"),
+      ),
                            
                        ],
                    ),
@@ -245,7 +254,7 @@ class _TurfState extends State<Turf> {
                    padding: EdgeInsets.only(left : 20),
                child:Container(
                    width: 150,
-                   color: Colors.grey[200],
+                   color: Colors.grey[600],
                    child:Row(
                        children: <Widget>[
                            ClipOval(
@@ -261,7 +270,10 @@ class _TurfState extends State<Turf> {
           ),
         ),
       ),
-      Text("Toilet"),
+      Padding(
+          padding: EdgeInsets.only(left: 10),
+      child:Text("Toilet"),
+      ),
                            
                        ],
                    ),

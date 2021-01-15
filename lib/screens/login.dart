@@ -21,7 +21,7 @@ class _MyAppsState extends State<MyApps> {
         color: Colors.blueAccent,
         fontStyle: FontStyle.italic,
       ),),
-      backgroundColor: Colors.white,
+      backgroundColor: Theme.of(context).primaryColor,
       photoSize: 150.0,
     );
   }
@@ -39,7 +39,7 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Theme.of(context).primaryColor,
       body: Column(
         children: <Widget>[
           Padding(
@@ -129,7 +129,7 @@ class Logins extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Theme.of(context).primaryColor,
       body: Column(
         children: <Widget>[
           Padding(

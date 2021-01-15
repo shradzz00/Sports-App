@@ -10,7 +10,7 @@ class _MessageState extends State<Message> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Theme.of(context).primaryColor,
       body: Column(
         children: <Widget>[
             Padding(
@@ -44,7 +44,7 @@ class _MessageState extends State<Message> {
               child: Padding(
                   padding: EdgeInsets.only(left: 15,right: 10 ),
       child:Card(
-          color: Colors.grey[200],
+          color: Colors.grey[700],
           child: ListView.builder(
       itemCount: 10,
       itemBuilder: (context, index) {

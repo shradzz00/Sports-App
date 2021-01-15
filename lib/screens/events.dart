@@ -14,7 +14,7 @@ class _EventsState extends State<Events> {
     @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor:Colors.white,
+        backgroundColor: Theme.of(context).primaryColor,
         body:ListView(
             children: <Widget>[
      Padding(
@@ -70,7 +70,7 @@ class _EventsState extends State<Events> {
                       child: Container(
                           width:200,
                         child: Card(
-                            color: Colors.grey[300],
+                            color: Colors.grey[600],
                           elevation: 3,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20)),
@@ -207,7 +207,7 @@ class CustomCardss extends StatelessWidget {
     child: Padding(
         padding: EdgeInsets.only(left: 10,right: 10),
     child: Card(
-        color:Colors.grey[200],
+        color:Colors.grey[600],
         child: Column(
           children: <Widget>[
              Container(
@@ -288,9 +288,7 @@ class CustomCardss extends StatelessWidget {
                     Navigator.push(
     context,
     MaterialPageRoute(builder: (context) => MatchDetails()),
-  );
-                    
-                    
+  );  
                 },
                 shape: RoundedRectangleBorder(
                   borderRadius: new BorderRadius.circular(20.0),

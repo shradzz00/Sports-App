@@ -11,7 +11,7 @@ class _BalanceState extends State<Balance> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Theme.of(context).primaryColor,
       body: ListView(
         children: <Widget>[
           Padding(
@@ -75,7 +75,7 @@ class _BalanceState extends State<Balance> {
                             Padding(
                             padding: EdgeInsets.only(right: 20),
                           child:Container(
-                            color: Colors.grey[300],
+                            color: Colors.grey[500],
                             child: Column(
                               children: <Widget>[
                                 Text("128"),
@@ -85,7 +85,7 @@ class _BalanceState extends State<Balance> {
                           ),
                             ),
                           Container(
-                            color: Colors.grey[300],
+                            color: Colors.grey[500],
                             child: Column(
                               children: <Widget>[
                                 Text("23"),
@@ -102,11 +102,11 @@ class _BalanceState extends State<Balance> {
             ),
           ),
           Padding(
-              padding: EdgeInsets.only(top: 10, left:10, right: 10 ),
+              padding: EdgeInsets.only(top: 20, left:10, right: 10 ),
           child:Container(
               width: 250,
               height: 30,
-            color: Colors.grey[200],
+            color: Colors.grey[600],
             child: Row(
               children: <Widget>[
                 Text("Balance",
@@ -128,7 +128,7 @@ class _BalanceState extends State<Balance> {
           ),
           ),
           Padding(
-          padding: EdgeInsets.only(top: 15, left: 10,right: 10  ),
+          padding: EdgeInsets.only(top: 25, left: 10,right: 10  ),
           child:Container(
             width: 300,
             height: 50,
@@ -149,7 +149,7 @@ class _BalanceState extends State<Balance> {
           ),
           ),
           Padding(
-          padding: EdgeInsets.only(left: 10,top: 10 ),
+          padding: EdgeInsets.only(left: 20,top: 10 ),
           child:Text("Statements",
           style: TextStyle(
               fontWeight: FontWeight.bold,
@@ -157,9 +157,9 @@ class _BalanceState extends State<Balance> {
           ),
           ),
           Padding(
-              padding: EdgeInsets.only(left:20, right: 20),
+              padding: EdgeInsets.only(left:30, right: 20),
           child:Card(
-            color: Colors.grey[200],
+            color: Colors.grey[600],
             child: Column(
               children: <Widget>[
                 Text("Statement 1"),

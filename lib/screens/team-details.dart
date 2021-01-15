@@ -12,7 +12,7 @@ class _TeamDetailsState extends State<TeamDetails> {
  @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor:Colors.white,
+        backgroundColor: Theme.of(context).primaryColor,
         body:ListView(
             children: <Widget>[  
 
@@ -49,7 +49,7 @@ class _TeamDetailsState extends State<TeamDetails> {
                       padding: EdgeInsets.only(top: 20),
 
       child:Card(
-                color: Colors.grey[200],
+                color: Colors.grey[500],
                 child: Column(
                         children: <Widget>[
                             

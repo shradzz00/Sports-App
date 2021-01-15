@@ -32,7 +32,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor:Colors.white,
+        backgroundColor: Theme.of(context).primaryColor,
         body:ListView(
             children: <Widget>[
                 CarouselSlider(
@@ -53,11 +53,13 @@ class _HomeState extends State<Home> {
                 return Builder(
                   builder:(BuildContext context){
                     return Container(
+                        color: Theme.of(context).primaryColor,
                       height: MediaQuery.of(context).size.height*0.2,
                       width: MediaQuery.of(context).size.width*1.5,
                       child: Padding(
                         padding: EdgeInsets.only(left: 10, right: 10, top: 10),
                       child: Card(
+                        color: Theme.of(context).primaryColor,
                         child: card,
                         shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15.0),
@@ -91,7 +93,6 @@ class _HomeState extends State<Home> {
                   "Events",
                   style: TextStyle(
                     fontSize: 20.0,
-                    color: Colors.black,
                   ),
                 ),
               ),
@@ -101,7 +102,6 @@ class _HomeState extends State<Home> {
                   child: Text(
                     "View all",
                     style: TextStyle(
-                      color: Colors.black,
                       fontSize: 20.0,
                     ),
                   ),
@@ -124,7 +124,7 @@ class _HomeState extends State<Home> {
                       child: Container(
                           width:200,
                         child: Card(
-                            color: Colors.grey[300],
+                            color: Colors.grey[600],
                           elevation: 3,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20)),
@@ -228,9 +228,11 @@ class _HomeState extends State<Home> {
                   }),
             ),
             ),
-        
-          Column(
+            Padding(
+        padding: EdgeInsets.only(top: 20),
+          child:Column(
             children: cards,
+          ),
           ),
         ],
       ),
@@ -249,8 +251,9 @@ class CustomCard extends StatelessWidget {
   );  
         },
     child: Padding(
-        padding: EdgeInsets.only(left: 10,right: 10),
+        padding: EdgeInsets.only(left: 10,right: 10, top: 10),
     child: Card(
+        color: Theme.of(context).primaryColor,
         child: Column(
           children: <Widget>[
              Container(

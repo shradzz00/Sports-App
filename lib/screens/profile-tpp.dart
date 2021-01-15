@@ -13,11 +13,11 @@ class _ProfiletppState extends State<Profiletpp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Theme.of(context).primaryColor,
       body: ListView(
         children: <Widget>[
             Padding(
-            padding: const EdgeInsets.only(top: 15.0, right: 200),
+            padding: const EdgeInsets.only(top: 15.0, right: 250),
                   child:IconButton(
                                       icon: Icon(Icons.arrow_back_ios),
                                       onPressed: () {
@@ -56,7 +56,7 @@ class _ProfiletppState extends State<Profiletpp> {
                                decoration: BoxDecoration(
     borderRadius: BorderRadius.circular(10),
                                ),
-                            color: Colors.grey[200],
+                            color: Colors.grey[500],
                             child: Column(
                               children: <Widget>[
                                 Text("128"),
@@ -69,7 +69,7 @@ class _ProfiletppState extends State<Profiletpp> {
                                decoration: BoxDecoration(
     borderRadius: BorderRadius.circular(10),
                                ),
-                            color: Colors.grey[200],
+                            color: Colors.grey[500],
                             child: Column(
                               children: <Widget>[
                                 Text("23"),
@@ -109,7 +109,7 @@ class _ProfiletppState extends State<Profiletpp> {
               ),
             ),
             Padding(
-            padding: EdgeInsets.only(right: 7 ),
+            padding: EdgeInsets.only(right: 7, left: 8 ),
            child:Container(
               width: 100,
               height: 20,
@@ -223,7 +223,7 @@ class _ProfiletppState extends State<Profiletpp> {
                     Padding(
                               padding: EdgeInsets.only(left:20,right: 10 ),
                   child:Card(
-                           color: Colors.grey[200],
+                           color: Colors.grey[600],
                            child: Column(
                                children: <Widget>[
                                    Padding(
@@ -342,7 +342,7 @@ class _ProfiletppState extends State<Profiletpp> {
                      decoration: BoxDecoration(
     borderRadius: BorderRadius.circular(10),
                      ),
-                    color:Colors.grey[200],
+                    color:Colors.grey[600],
                 child: Center(
                     child: Text("Centre Forward"),
               ),

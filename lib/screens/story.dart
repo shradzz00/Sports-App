@@ -11,7 +11,7 @@ class _StoryState extends State<Story> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber[100],
+      backgroundColor: Colors.amber[50],
       body: Container(
           child: Column(
         children: <Widget>[
@@ -21,7 +21,9 @@ class _StoryState extends State<Story> {
                 children:<Widget>[
 
       IconButton(
-        icon: const Icon(Icons.arrow_back_ios),
+        icon: const Icon(Icons.arrow_back_ios,
+        color: Colors.black,
+        ),
         onPressed: () {
              Navigator.push(
     context,
@@ -35,7 +37,9 @@ class _StoryState extends State<Story> {
             child:Container(
                 child: Row(
                     children: <Widget>[
-                        Icon(Icons.visibility),
+                        Icon(Icons.visibility,
+                        color: Colors.black,
+                        ),
                         Text("34"),
                     ],
                 ),
@@ -66,7 +70,7 @@ class _StoryState extends State<Story> {
             maxChildSize: 0.8,
             builder: (BuildContext context, myscrollController) {
               return Container(
-                  color: Colors.white,
+                  color: Theme.of(context).primaryColor,
                 decoration: BoxDecoration(
     
    borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -78,7 +82,6 @@ class _StoryState extends State<Story> {
                     return ListTile(
                         title: Text(
                       'Smith John',
-                      style: TextStyle(color: Colors.black54),
                     ),
                     leading: CircleAvatar(),
                       trailing: Text(" 12 min ago"),

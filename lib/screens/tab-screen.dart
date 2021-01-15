@@ -51,18 +51,18 @@ class _TabsScreenState extends State<TabsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.grey[400],
       body: _pages[_selectedPageIndex]['page'],
       bottomNavigationBar: BottomNavigationBar(
         onTap: _selectPage,
-        backgroundColor: Theme.of(context).primaryColor,
+        backgroundColor: Colors.grey[400],
         unselectedItemColor: Colors.black,
-        selectedItemColor: Colors.blueAccent,
+        selectedItemColor: Colors.white,
         currentIndex: _selectedPageIndex,
         // type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
-            backgroundColor: Theme.of(context).primaryColor,
+            backgroundColor: Colors.grey[400],
             icon: Icon(Icons.home,
             color: Colors.black,
             ),
@@ -73,7 +73,7 @@ class _TabsScreenState extends State<TabsScreen> {
             ),
           ),
           BottomNavigationBarItem(
-            backgroundColor: Theme.of(context).primaryColor,
+            backgroundColor: Colors.grey[400],
             icon: Icon(Icons.group,
             color: Colors.black,
             ),
@@ -84,7 +84,7 @@ class _TabsScreenState extends State<TabsScreen> {
             ),
             ),
           BottomNavigationBarItem(
-            backgroundColor: Theme.of(context).primaryColor,
+             backgroundColor: Colors.grey[400],
             icon: Icon(Icons.dashboard_outlined,
             color: Colors.black,
             ),
@@ -95,7 +95,7 @@ class _TabsScreenState extends State<TabsScreen> {
             ),
             ),
           BottomNavigationBarItem(
-            backgroundColor: Theme.of(context).primaryColor,
+            backgroundColor: Colors.grey[400],
             icon: Icon(Icons.assignment,
             color: Colors.black,
             ),
@@ -106,7 +106,7 @@ class _TabsScreenState extends State<TabsScreen> {
             ),
           ),
           BottomNavigationBarItem(
-            backgroundColor: Theme.of(context).primaryColor,
+            
             icon: Icon(Icons.person,
             color: Colors.black,
             ),

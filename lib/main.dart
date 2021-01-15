@@ -1,7 +1,10 @@
+import 'package:dynamic_theme/dynamic_theme.dart';
 import 'package:flutter/material.dart';
-import './screens/login.dart';
+import 'package:spozit/screens/login.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(MyApp());
+}
 
 class MyApp extends StatefulWidget {
   @override
@@ -9,30 +12,21 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'SPOZIT',
-      theme: ThemeData(
-        primaryColor: Colors.white,
-        accentColor: Colors.blueAccent,
-        canvasColor: Color.fromRGBO(255, 254, 229, 1),
-        fontFamily: 'Raleway',
-        textTheme: ThemeData.light().textTheme.copyWith(
-            body1: TextStyle(
-              color: Color.fromRGBO(20, 51, 51, 1),
-            ),
-            body2: TextStyle(
-              color: Color.fromRGBO(20, 51, 51, 1),
-            ),
-            title: TextStyle(
-              fontSize: 20,
-              fontFamily: 'RobotoCondensed',
-              fontWeight: FontWeight.bold,
-            )),
-      ),
+       theme: ThemeData(
+       brightness: Brightness.light,
+       primaryColor: Colors.white,
+       accentColor: Colors.black,
+       ),
+       darkTheme: ThemeData(
+       brightness: Brightness.dark,
+       primaryColor: Colors.black,
+       accentColor: Colors.white,
+       ),
+       themeMode: ThemeMode.system,
        home: MyApps(),
        //TabsScreen(),
       //initialRoute: '/', // default is '/'

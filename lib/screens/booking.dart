@@ -24,10 +24,11 @@ class _BookingState extends State<Booking> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Theme.of(context).primaryColor,
       body:  Column(
         children: <Widget>[
           Card(
+            color:  Theme.of(context).primaryColor,  
             child: Column(
               children: <Widget>[
                 Card(
@@ -78,7 +79,7 @@ class _BookingState extends State<Booking> {
           Padding(
           padding: EdgeInsets.only(left: 10, right: 10, top:10),
           child:Card(
-                  color: Colors.grey[200],
+                  color: Colors.grey[500],
                 child: Column(
                     children: <Widget>[
                         Padding( 
@@ -149,9 +150,9 @@ class _BookingState extends State<Booking> {
     fromTitle: Text('From', style: TextStyle(fontSize: 18, color: Colors.grey),),
     toTitle: Text('To', style: TextStyle(fontSize: 18, color: Colors.grey),),
     titlePadding: 20,
-    textStyle: TextStyle(fontWeight: FontWeight.normal, color: Colors.black87),
-    activeTextStyle: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
-    borderColor: Colors.black,
+    textStyle: TextStyle(fontWeight: FontWeight.normal, color:  Theme.of(context).accentColor),
+    activeTextStyle: TextStyle(fontWeight: FontWeight.bold, color: Theme.of(context).accentColor ),
+    borderColor: Theme.of(context).accentColor,
     backgroundColor: Colors.transparent,
     activeBackgroundColor: Colors.blueAccent,
     firstTime: TimeOfDay(hour: 6, minute: 00),
@@ -202,6 +203,7 @@ class _BookingState extends State<Booking> {
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
                 elevation: 16,
                 child: Container(
+                    color: Colors.white,
                   height: 600.0,
                   width: 360.0,
                   child: Padding(

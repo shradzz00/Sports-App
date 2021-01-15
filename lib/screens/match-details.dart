@@ -5,7 +5,7 @@ class MatchDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Theme.of(context).primaryColor,
           appBar: AppBar(
             title: Text('Match Details'),
             leading: Builder(
@@ -27,7 +27,7 @@ class MatchDetails extends StatelessWidget {
                   Padding(
                   padding: EdgeInsets.only(left: 20,right: 20, top: 20 ),
                   child:Card(
-                      color: Colors.grey[300],
+                      color: Colors.grey[400],
                       child: Column(
                           children: <Widget>[
                               Padding(
@@ -63,7 +63,7 @@ class MatchDetails extends StatelessWidget {
                                   height: 20,
                                               decoration: BoxDecoration(
                                                   borderRadius: BorderRadius.circular(16.0),
-                                                  color: Colors.grey[200],
+                                                  color: Colors.grey[600],
                                               ),
                                               child: Center(
                                               child:Text("Beginner"),
@@ -77,7 +77,7 @@ class MatchDetails extends StatelessWidget {
                               Padding(
                               padding: EdgeInsets.only(left:10,right: 10, top: 10 ),
                   child:Card(
-                           color: Colors.grey[500],
+                           color: Colors.grey[600],
                            child: Column(
                                children: <Widget>[
                                    Padding(

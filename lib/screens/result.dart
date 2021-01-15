@@ -5,7 +5,7 @@ class Result extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor:Colors.white,
+        backgroundColor: Theme.of(context).primaryColor,
         body:ListView(
             children: <Widget>[
                  Padding(
@@ -23,20 +23,20 @@ class Result extends StatelessWidget {
                  Padding(
                      padding: EdgeInsets.only(left: 20, right: 20, top: 10 ),
                  child:Card(
-                     color: Colors.grey[200],
+                     color: Colors.grey[600],
                      child: Column(
                          children: <Widget>[
                              Row(
                                  children: <Widget>[
                                      ClipOval(
         child: Container(
-          height: 100,
-          width: 100,
+          height: 80,
+          width: 80,
           color: Colors.grey.shade200,
           child: Image.asset(
             'assets/images/team.png',
-            width: 100.0,
-            height: 100.0,
+            width: 80.0,
+            height: 80.0,
             fit: BoxFit.contain,
           ),
         ),
@@ -75,13 +75,13 @@ class Result extends StatelessWidget {
                                  children: <Widget>[
                                      ClipOval(
         child: Container(
-          height: 100,
-          width: 100,
+          height: 80,
+          width: 80,
           color: Colors.grey.shade200,
           child: Image.asset(
             'assets/images/team1.jpg',
-            width: 100.0,
-            height: 100.0,
+            width: 80.0,
+            height: 80.0,
             fit: BoxFit.contain,
           ),
         ),
@@ -116,7 +116,7 @@ class Result extends StatelessWidget {
                      Padding(
                               padding: EdgeInsets.only(left:10,right: 10, top: 10 ),
                   child:Card(
-                           color: Colors.grey[200],
+                           color: Colors.grey[600],
                            child: Column(
                                children: <Widget>[
                                    Padding(
@@ -194,34 +194,40 @@ class Result extends StatelessWidget {
                           padding: EdgeInsets.only(left: 20, right: 20, top: 10),
 
                  child:Card(
-                     color: Colors.grey[200],
+                     color: Colors.grey[600],
                      child: Column(
                          children: <Widget>[
                      Row(
                          children: <Widget>[
-                             ClipOval(
+                             Padding(
+                             padding: EdgeInsets.only(left: 20),
+                             child:ClipOval(
         child: Container(
-          height: 100,
-          width: 100,
+          height: 70,
+          width: 70,
           color: Colors.grey.shade200,
           child: Image.asset(
             'assets/images/team.png',
-            width: 100.0,
-            height: 100.0,
+            width: 70.0,
+            height: 70.0,
             fit: BoxFit.contain,
           ),
         ),
       ),
-      Text("VS"),
+                             ),
+      Padding(
+      padding: EdgeInsets.only(left: 20, right: 20),
+      child:Text("VS"),
+                     ),
       ClipOval(
         child: Container(
-          height: 100,
-          width: 100,
+          height: 70,
+          width: 70,
           color: Colors.grey.shade200,
           child: Image.asset(
-            'assets/images/team.png',
-            width: 100.0,
-            height: 100.0,
+            'assets/images/team1.jpg',
+            width: 70.0,
+            height: 70.0,
             fit: BoxFit.contain,
           ),
         ),
@@ -230,7 +236,7 @@ class Result extends StatelessWidget {
                          ],
                      ),
                      Padding(
-                     padding: EdgeInsets.only(left: 30),
+                     padding: EdgeInsets.only(left: 30, top: 20),
                  child: Row(
                      children:<Widget>[
                          Column(

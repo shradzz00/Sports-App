@@ -13,7 +13,7 @@ class _TeamsState extends State<Teams> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Theme.of(context).primaryColor,
       body: ListView(
         children: <Widget>[
           Padding(
@@ -50,8 +50,11 @@ class _TeamsState extends State<Teams> {
               ],
             ),
           ),
-          Column(
+          Padding(
+              padding: EdgeInsets.only(top: 30),
+          child:Column(
             children: card,
+          ),
           ),
         ],
       ),
@@ -71,13 +74,14 @@ class CustomCard extends StatelessWidget {
 
         },
    child: Card(
+       color: Theme.of(context).primaryColor,
         elevation: 5,
       child: Column(
           children: <Widget>[
       Container(
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(16.0),
-                          color: Colors.grey[200],
+                          color: Colors.grey[600],
                       ),
                   
       child: Row(

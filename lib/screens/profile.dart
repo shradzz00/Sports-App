@@ -17,7 +17,7 @@ class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Theme.of(context).primaryColor,
       body: ListView(
         children: <Widget>[
           Padding(
@@ -87,7 +87,7 @@ class _ProfileState extends State<Profile> {
                                decoration: BoxDecoration(
     borderRadius: BorderRadius.circular(10),
                                ),
-                            color: Colors.grey[200],
+                            color: Colors.grey[500],
                             child: Column(
                               children: <Widget>[
                                 Text("128"),
@@ -100,7 +100,7 @@ class _ProfileState extends State<Profile> {
                                decoration: BoxDecoration(
     borderRadius: BorderRadius.circular(10),
                                ),
-                            color: Colors.grey[300],
+                            color: Colors.grey[500],
                             child: Column(
                               children: <Widget>[
                                 Text("23"),
@@ -110,7 +110,6 @@ class _ProfileState extends State<Profile> {
                           ),
                         ],
                       ),
-                      
                     ],
                   ),
                 ),
@@ -163,7 +162,7 @@ class _ProfileState extends State<Profile> {
             ),
           ),
           Padding(
-              padding: EdgeInsets.only(left: 10 ),
+              padding: EdgeInsets.only(left: 10, top: 10 ),
           child:Row(
             children: <Widget>[
                  CircularPercentIndicator(
@@ -192,7 +191,7 @@ class _ProfileState extends State<Profile> {
                     Padding(
                               padding: EdgeInsets.only(left:20,right: 10 ),
                   child:Card(
-                           color: Colors.grey[200],
+                           color: Colors.grey[600],
                            child: Column(
                                children: <Widget>[
                                    Padding(

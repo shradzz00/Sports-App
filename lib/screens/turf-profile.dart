@@ -16,10 +16,11 @@ class _TurfProfileState extends State<TurfProfile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Theme.of(context).primaryColor,
       body: ListView(
         children: <Widget>[
             Card(
+            color: Theme.of(context).primaryColor,
       child: Container(
         width: 350,
         height: 180,
@@ -51,7 +52,7 @@ class _TurfProfileState extends State<TurfProfile> {
     Card(
       margin: const EdgeInsets.only(top: 20.0),
       child: SizedBox(
-          height: 100.0,
+          height: 200,
           width: double.infinity,
           child: Padding(
             padding: const EdgeInsets.only(top: 45.0),
@@ -63,7 +64,7 @@ class _TurfProfileState extends State<TurfProfile> {
                   child:Row(
                       children: <Widget>[
                           Container(
-                            color: Colors.grey[300],
+                            color: Colors.grey[500],
                             child: Column(
                               children: <Widget>[
                                 Text("128"),
@@ -74,7 +75,7 @@ class _TurfProfileState extends State<TurfProfile> {
                           Padding(
                           padding: EdgeInsets.only(left: 20),
                           child:Container(
-                            color: Colors.grey[300],
+                            color: Colors.grey[500],
                             child: Column(
                               children: <Widget>[
                                 Text("23"),
@@ -94,7 +95,7 @@ class _TurfProfileState extends State<TurfProfile> {
                               child:Container(
                                   width: 100,
                                   height: 30,
-                                  color: Colors.blue[100],
+                                  color: Colors.blue[200],
                                   child: Center(
                                       child: Text("Follow"),
                                   ),
@@ -107,7 +108,7 @@ class _TurfProfileState extends State<TurfProfile> {
                               child:Container(
                                   width: 100,
                                   height: 30,
-                                   color: Colors.blue[100],
+                                   color: Colors.blue[200],
                                   child: Center(
                                       child: Text("Contact"),
                                   ),
@@ -145,7 +146,7 @@ class _TurfProfileState extends State<TurfProfile> {
             ),
           ),
           Padding(
-          padding: EdgeInsets.only(left: 10, top: 10),
+          padding: EdgeInsets.only(left: 10, top: 20),
           child:Row(
               children: <Widget>[
                   Text("Customer Feedback",
@@ -187,14 +188,13 @@ class _TurfProfileState extends State<TurfProfile> {
         child: CircleAvatar(
           radius: 30.0,
           backgroundImage: AssetImage('assets/images/feed.jpg'),
-          
         ),
       ),
     ),
   ],
 ),
 Padding(
-padding: EdgeInsets.only(top: 120),
+padding: EdgeInsets.only(top: 50),
 child:Container(
 
               height: 150, // card height
@@ -239,8 +239,9 @@ child:Container(
                                       ),
                                       Card(
                                           color: Colors.grey,
-                                          child:Text("abcdefghijklmnopqrstuvwxyzqweryuopasdfgjllzxcvbnm",
-                                          maxLines: 3,
+                                          child:Center(
+                                              child:Text("abcdefghijklmnopqrstuvwxyzqweryuopasdfgjllzxcvbnm",
+                                          ),
                                           ),
                                       ),
                                   ],
@@ -286,12 +287,12 @@ child: Container(
               Image.asset('assets/images/event1.jpg'),
               
           ],
-        )
+        ),
       ),
 ),
-                                      
         ],
-      ),
+            ),
+                                      
     );
   }
 }

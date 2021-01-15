@@ -12,7 +12,7 @@ class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Theme.of(context).primaryColor,
       body: Column(
        children: <Widget>[
         Padding(
@@ -132,7 +132,7 @@ class _SignUpState extends State<SignUp> {
                 
                 child: CircleAvatar(
                   child: Image.asset('assets/images/google.jpg'),
-                radius: 40.0,
+                radius: 35.0,
               ),
               ),
             
@@ -141,7 +141,7 @@ class _SignUpState extends State<SignUp> {
            
             child: CircleAvatar(
              child: Image.asset('assets/images/facebook.png'), 
-            radius: 40.0,
+            radius: 35.0,
             
           ),
           ),
@@ -162,7 +162,7 @@ class _VerifyState extends State<Verify> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Theme.of(context).primaryColor,
         body: ListView(
             children: <Widget>[
                 Padding(
