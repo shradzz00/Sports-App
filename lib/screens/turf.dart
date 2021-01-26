@@ -164,7 +164,7 @@ class _TurfState extends State<Turf> {
                    children: <Widget>[
                Container(
                    width: 150,
-                   color:Colors.grey[600],
+                   color: Theme.of(context).primaryColorLight,
                    child:Row(
                        children: <Widget>[
                            ClipOval(
@@ -192,7 +192,7 @@ class _TurfState extends State<Turf> {
                    padding: EdgeInsets.only(left: 20),
                child:Container(
                    width: 150,
-                   color: Colors.grey[600],
+                   color: Theme.of(context).primaryColorLight,
                    child:Row(
                        children: <Widget>[
                            ClipOval(
@@ -226,7 +226,7 @@ class _TurfState extends State<Turf> {
                    children: <Widget>[
                Container(
                    width: 150,
-                   color: Colors.grey[600],
+                   color: Theme.of(context).primaryColorLight,
                    child:Row(
                        children: <Widget>[
                            ClipOval(
@@ -254,7 +254,7 @@ class _TurfState extends State<Turf> {
                    padding: EdgeInsets.only(left : 20),
                child:Container(
                    width: 150,
-                   color: Colors.grey[600],
+                   color: Theme.of(context).primaryColorLight,
                    child:Row(
                        children: <Widget>[
                            ClipOval(

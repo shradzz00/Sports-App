@@ -64,7 +64,7 @@ class _TurfProfileState extends State<TurfProfile> {
                   child:Row(
                       children: <Widget>[
                           Container(
-                            color: Colors.grey[500],
+                            color: Theme.of(context).primaryColorLight,
                             child: Column(
                               children: <Widget>[
                                 Text("128"),
@@ -75,7 +75,7 @@ class _TurfProfileState extends State<TurfProfile> {
                           Padding(
                           padding: EdgeInsets.only(left: 20),
                           child:Container(
-                            color: Colors.grey[500],
+                            color: Theme.of(context).primaryColorLight,
                             child: Column(
                               children: <Widget>[
                                 Text("23"),
@@ -238,7 +238,7 @@ child:Container(
                               ),
                                       ),
                                       Card(
-                                          color: Colors.grey,
+                                          color: Theme.of(context).primaryColorLight,
                                           child:Center(
                                               child:Text("abcdefghijklmnopqrstuvwxyzqweryuopasdfgjllzxcvbnm",
                                           ),

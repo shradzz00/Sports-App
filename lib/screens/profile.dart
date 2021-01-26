@@ -87,7 +87,7 @@ class _ProfileState extends State<Profile> {
                                decoration: BoxDecoration(
     borderRadius: BorderRadius.circular(10),
                                ),
-                            color: Colors.grey[500],
+                            color: Theme.of(context).primaryColorLight,
                             child: Column(
                               children: <Widget>[
                                 Text("128"),
@@ -100,7 +100,7 @@ class _ProfileState extends State<Profile> {
                                decoration: BoxDecoration(
     borderRadius: BorderRadius.circular(10),
                                ),
-                            color: Colors.grey[500],
+                            color: Theme.of(context).primaryColorLight,
                             child: Column(
                               children: <Widget>[
                                 Text("23"),
@@ -191,7 +191,7 @@ class _ProfileState extends State<Profile> {
                     Padding(
                               padding: EdgeInsets.only(left:20,right: 10 ),
                   child:Card(
-                           color: Colors.grey[600],
+                           color: Theme.of(context).primaryColorLight,
                            child: Column(
                                children: <Widget>[
                                    Padding(
@@ -310,7 +310,7 @@ class _ProfileState extends State<Profile> {
                      decoration: BoxDecoration(
     borderRadius: BorderRadius.circular(10),
                      ),
-                    color:Colors.grey[200],
+                    color: Theme.of(context).primaryColorLight,
                 child: Center(
                     child: Text("Centre Forward"),
               ),

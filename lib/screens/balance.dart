@@ -75,7 +75,7 @@ class _BalanceState extends State<Balance> {
                             Padding(
                             padding: EdgeInsets.only(right: 20),
                           child:Container(
-                            color: Colors.grey[500],
+                            color: Theme.of(context).primaryColorLight,
                             child: Column(
                               children: <Widget>[
                                 Text("128"),
@@ -85,7 +85,7 @@ class _BalanceState extends State<Balance> {
                           ),
                             ),
                           Container(
-                            color: Colors.grey[500],
+                            color: Theme.of(context).primaryColorLight,
                             child: Column(
                               children: <Widget>[
                                 Text("23"),
@@ -106,7 +106,7 @@ class _BalanceState extends State<Balance> {
           child:Container(
               width: 250,
               height: 30,
-            color: Colors.grey[600],
+            color: Theme.of(context).primaryColorLight,
             child: Row(
               children: <Widget>[
                 Text("Balance",
@@ -159,7 +159,7 @@ class _BalanceState extends State<Balance> {
           Padding(
               padding: EdgeInsets.only(left:30, right: 20),
           child:Card(
-            color: Colors.grey[600],
+            color: Theme.of(context).primaryColorLight,
             child: Column(
               children: <Widget>[
                 Text("Statement 1"),

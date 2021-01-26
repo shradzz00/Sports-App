@@ -49,7 +49,7 @@ class _TeamDetailsState extends State<TeamDetails> {
                       padding: EdgeInsets.only(top: 20),
 
       child:Card(
-                color: Colors.grey[500],
+                color: Theme.of(context).primaryColorLight,
                 child: Column(
                         children: <Widget>[
                             

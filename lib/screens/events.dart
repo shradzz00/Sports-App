@@ -70,7 +70,7 @@ class _EventsState extends State<Events> {
                       child: Container(
                           width:200,
                         child: Card(
-                            color: Colors.grey[600],
+                            color: Theme.of(context).primaryColorLight,
                           elevation: 3,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20)),
@@ -207,7 +207,7 @@ class CustomCardss extends StatelessWidget {
     child: Padding(
         padding: EdgeInsets.only(left: 10,right: 10),
     child: Card(
-        color:Colors.grey[600],
+        color: Theme.of(context).primaryColorLight,
         child: Column(
           children: <Widget>[
              Container(

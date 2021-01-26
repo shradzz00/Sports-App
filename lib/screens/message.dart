@@ -44,7 +44,7 @@ class _MessageState extends State<Message> {
               child: Padding(
                   padding: EdgeInsets.only(left: 15,right: 10 ),
       child:Card(
-          color: Colors.grey[700],
+          color: Theme.of(context).primaryColorLight,
           child: ListView.builder(
       itemCount: 10,
       itemBuilder: (context, index) {

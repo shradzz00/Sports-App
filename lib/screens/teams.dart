@@ -81,7 +81,7 @@ class CustomCard extends StatelessWidget {
       Container(
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(16.0),
-                          color: Colors.grey[600],
+                          color: Theme.of(context).primaryColorLight,
                       ),
                   
       child: Row(

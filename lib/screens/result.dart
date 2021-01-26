@@ -23,7 +23,7 @@ class Result extends StatelessWidget {
                  Padding(
                      padding: EdgeInsets.only(left: 20, right: 20, top: 10 ),
                  child:Card(
-                     color: Colors.grey[600],
+                     color: Theme.of(context).primaryColorLight,
                      child: Column(
                          children: <Widget>[
                              Row(
@@ -116,7 +116,7 @@ class Result extends StatelessWidget {
                      Padding(
                               padding: EdgeInsets.only(left:10,right: 10, top: 10 ),
                   child:Card(
-                           color: Colors.grey[600],
+                           color: Theme.of(context).primaryColorLight,
                            child: Column(
                                children: <Widget>[
                                    Padding(
@@ -194,7 +194,7 @@ class Result extends StatelessWidget {
                           padding: EdgeInsets.only(left: 20, right: 20, top: 10),
 
                  child:Card(
-                     color: Colors.grey[600],
+                     color: Theme.of(context).primaryColorLight,
                      child: Column(
                          children: <Widget>[
                      Row(

@@ -35,9 +35,52 @@ class _HomeState extends State<Home> {
         backgroundColor: Theme.of(context).primaryColor,
         body:ListView(
             children: <Widget>[
+                Padding(
+            padding: const EdgeInsets.only(top: 15.0, left: 20),
+            child: Row(
+              children: <Widget>[
+                Column(
+                    children:<Widget>[
+                        Text(
+                  "Spozit",
+                  style: TextStyle(
+                    fontSize: 35,
+                    color: Colors.blueAccent,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                Row(
+                            children: <Widget>[
+                              Icon(Icons.location_on,
+                              size : 12,
+                              ),
+                              Text("Sarthana Jakatnaka",
+                              ),
+                            ],
+          ),
+                    ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 100.0),
+                  child: IconButton(
+                    icon: Icon(Icons.qr_code_scanner),
+                    onPressed: () {
+                    },
+                  ),
+                ),
+                  
+                  IconButton(
+                    icon: Icon(Icons.search),
+                    onPressed: () {},
+                  ),
+              ],
+            ),
+          ),
+          
                 CarouselSlider(
               options: CarouselOptions(
-                height: 280.0,
+                height: 260.0,
                 autoPlay: true,
                 autoPlayInterval: Duration(seconds: 10),
                 autoPlayAnimationDuration: Duration(milliseconds: 800),
@@ -55,9 +98,9 @@ class _HomeState extends State<Home> {
                     return Container(
                         color: Theme.of(context).primaryColor,
                       height: MediaQuery.of(context).size.height*0.2,
-                      width: MediaQuery.of(context).size.width*1.5,
+                      width: MediaQuery.of(context).size.width*1.0,
                       child: Padding(
-                        padding: EdgeInsets.only(left: 10, right: 10, top: 10),
+                        padding: EdgeInsets.only(top: 10),
                       child: Card(
                         color: Theme.of(context).primaryColor,
                         child: card,
@@ -124,7 +167,7 @@ class _HomeState extends State<Home> {
                       child: Container(
                           width:200,
                         child: Card(
-                            color: Colors.grey[600],
+                            color: Theme.of(context).primaryColorLight,
                           elevation: 3,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20)),

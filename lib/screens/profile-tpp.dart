@@ -56,7 +56,7 @@ class _ProfiletppState extends State<Profiletpp> {
                                decoration: BoxDecoration(
     borderRadius: BorderRadius.circular(10),
                                ),
-                            color: Colors.grey[500],
+                            color: Theme.of(context).primaryColorLight,
                             child: Column(
                               children: <Widget>[
                                 Text("128"),
@@ -69,7 +69,7 @@ class _ProfiletppState extends State<Profiletpp> {
                                decoration: BoxDecoration(
     borderRadius: BorderRadius.circular(10),
                                ),
-                            color: Colors.grey[500],
+                            color: Theme.of(context).primaryColorLight,
                             child: Column(
                               children: <Widget>[
                                 Text("23"),
@@ -223,7 +223,7 @@ class _ProfiletppState extends State<Profiletpp> {
                     Padding(
                               padding: EdgeInsets.only(left:20,right: 10 ),
                   child:Card(
-                           color: Colors.grey[600],
+                           color: Theme.of(context).primaryColorLight,
                            child: Column(
                                children: <Widget>[
                                    Padding(
@@ -342,7 +342,7 @@ class _ProfiletppState extends State<Profiletpp> {
                      decoration: BoxDecoration(
     borderRadius: BorderRadius.circular(10),
                      ),
-                    color:Colors.grey[600],
+                    color: Theme.of(context).primaryColorLight,
                 child: Center(
                     child: Text("Centre Forward"),
               ),

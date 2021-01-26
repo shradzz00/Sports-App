@@ -20,11 +20,13 @@ class _MyAppState extends State<MyApp> {
        brightness: Brightness.light,
        primaryColor: Colors.white,
        accentColor: Colors.black,
+       primaryColorLight: Colors.grey[300],
        ),
        darkTheme: ThemeData(
        brightness: Brightness.dark,
        primaryColor: Colors.black,
        accentColor: Colors.white,
+       primaryColorLight: Colors.grey[600],
        ),
        themeMode: ThemeMode.system,
        home: MyApps(),
